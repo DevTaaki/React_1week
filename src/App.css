@@ -1,38 +1,81 @@
 .App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.Box {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  max-width: 350px;
+  width: 50vw;
+  margin: 5vh auto;
+  height: 80vh;
+  padding: 5vh 0px;
+}
+
+/* Home.js */
+
+.Title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.DayGroup {
+  display: flex; 
+  padding: 1vh 5vh; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Days {
+  position: relative;
+  top: 3px;
+  margin: 5px; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  background-color: grey;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.Triangle {
+  margin: 3px;
+  width: 5px;
+  height: 0;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  border-left: 20px solid purple;
+}
+
+/* Review.js */
+
+.DayName {
+  text-align: center;
+}
+
+#raitingday {
+  padding: 3px;
+  border: 2px solid orange;
+  border-radius: 7px;
+  background-color: orange;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Btn {
+  padding: 15px 30%; 
+  margin: 0 3vh; 
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid purple;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clickedstar {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  background-color: yellow;
+  border-radius: 50%;
+  margin: 5px;
 }
